@@ -1,0 +1,121 @@
+/* mixin classes */
+.leftRail {
+	composes: xl_col-end-8 from global;
+	composes: xl_col-start-1 from global;
+}
+
+.rightRail {
+	composes: xl_col-end-13 from global;
+	composes: xl_col-start-8 from global;
+}
+
+.safelist {
+	composes: max-w-prose from global;
+}
+
+/* real classes */
+.root {
+	composes: container from global;
+	composes: gap-lg from global;
+	composes: grid from global;
+	composes: grid-rows-common from global;
+	composes: xl_grid-cols-12 from global;
+	composes: xl_grid-flow-row-dense from global;
+}
+
+.header {
+	composes: rail-header from global;
+	composes: rightRail;
+}
+
+.productName {
+	composes: heading from global;
+	composes: rail-title from global;
+}
+
+.price {
+	composes: text-200 from global;
+}
+
+.carousel {
+	composes: gap-2 from global;
+	composes: grid from global;
+	composes: grid-cols-9 from global;
+	composes: row-span-2 from global;
+	composes: leftRail;
+}
+
+.thumbnails {
+	composes: col-span-2 from global;
+	composes: gap-sm from global;
+	composes: grid from global;
+	composes: max-h-screen-md from global;
+	composes: overflow-auto from global;
+	composes: pr-xs from global;
+}
+
+.thumbnail {
+	composes: object-center from global;
+	composes: object-contain from global;
+	composes: rounded-lg from global;
+}
+
+.image {
+	composes: bg-neutral-100 from global;
+	composes: col-span-7 from global;
+	composes: max-h-screen-md from global;
+	composes: rounded-lg from global;
+}
+
+.mockImage {
+	composes: h-full from global;
+	composes: mx-auto from global;
+	composes: object-center from global;
+	composes: object-cover from global;
+	composes: rounded-lg from global;
+}
+
+.config {
+	composes: rail-body from global;
+	composes: rightRail;
+}
+
+.description {
+	composes: card from global;
+	composes: min-h-40 from global;
+	composes: leftRail;
+}
+
+.descriptionHeader {
+	composes: card-header from global;
+}
+
+.descriptionTitle {
+	composes: heading from global;
+	composes: text-200 from global;
+}
+
+.details {
+	composes: card from global;
+	composes: min-h-40 from global;
+	composes: rightRail;
+}
+
+.detailsHeader {
+	composes: card-header from global;
+}
+
+.detailsTitle {
+	composes: heading from global;
+	composes: text-200 from global;
+}
+
+.banner {
+	composes: container from global;
+	composes: xl_col-span-12 from global;
+}
+
+.mockBanner {
+	composes: mx-auto from global;
+	composes: rounded-lg from global;
+}

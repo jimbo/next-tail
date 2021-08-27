@@ -1,12 +1,21 @@
-module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+const venia = require("./theme")
+
+const config = {
+    mode: "jit",
+    presets: [venia],
+	purge: {
+		content: [
+			"./components/**/*.css",
+			"./pages/**/*.css",
+		],
+		extractors: [
+			{
+				extractor: (content) => content.match(matcher) || [],
+				extensions: ["css"]
+			}
+		]
+	},
+	separator: "_",
 }
+
+module.exports = config
