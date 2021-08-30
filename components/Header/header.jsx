@@ -6,7 +6,6 @@ const Header = (props) => {
 	const text = hydrated ? "Hydrated!" : "Hydrating..."
 
 	useEffect(() => {
-		console.log(classes)
 		setHydrated(true)
 	}, [setHydrated])
 
