@@ -5,7 +5,7 @@ const Breadcrumbs = (props) => {
 	return (
 		<nav className={classes.breadcrumbs}>
 			<Link className={classes.link} href="/">
-				Home
+				<a>Home</a>
 			</Link>
 			<span className={classes.separator}>/</span>
 			<span className={classes.link}>Dresses</span>

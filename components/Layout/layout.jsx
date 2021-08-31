@@ -10,7 +10,6 @@ const Layout = (props) => {
 
 	const isHome = pathname === "/"
 	const shouldRenderBreadcrumbs = !isHome
-	console.log({ pathname, isHome, shouldRenderBreadcrumbs })
 	const breadcrumbs = shouldRenderBreadcrumbs ? <Breadcrumbs /> : null
 
 	return (

@@ -25,25 +25,31 @@ const Home = (props) => {
 			</div>
 			<div className={classes.tiles}>
 				<Link className={classes.tile} href="/product">
-					<img
-						className={classes.tileImage}
-						height="280"
-						src="https://picsum.photos/id/112/752/280"
-					/>
+					<a>
+						<img
+							className={classes.tileImage}
+							height="280"
+							src="https://picsum.photos/id/112/752/280"
+						/>
+					</a>
+				</Link>
+				<Link className={classes.tile} href="/athena-tank-dress">
+					<a>
+						<img
+							className={classes.tileImage}
+							height="280"
+							src="https://picsum.photos/id/127/752/280"
+						/>
+					</a>
 				</Link>
 				<Link className={classes.tile} href="/product">
-					<img
-						className={classes.tileImage}
-						height="280"
-						src="https://picsum.photos/id/127/752/280"
-					/>
-				</Link>
-				<Link className={classes.tile} href="/product">
-					<img
-						className={classes.tileImage}
-						height="280"
-						src="https://picsum.photos/id/1016/752/280"
-					/>
+					<a>
+						<img
+							className={classes.tileImage}
+							height="280"
+							src="https://picsum.photos/id/1016/752/280"
+						/>
+					</a>
 				</Link>
 			</div>
 		</main>

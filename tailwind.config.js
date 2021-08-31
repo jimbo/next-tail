@@ -1,13 +1,10 @@
 const venia = require("./theme")
 
 const config = {
-    mode: "jit",
-    presets: [venia],
+	mode: "jit",
+	presets: [venia],
 	purge: {
-		content: [
-			"./components/**/*.css",
-			"./pages/**/*.css",
-		],
+		content: ["./components/**/*.css", "./pages/**/*.css"],
 		extractors: [
 			{
 				extractor: (content) => content.match(matcher) || [],
@@ -15,7 +12,7 @@ const config = {
 			}
 		]
 	},
-	separator: "_",
+	separator: "_"
 }
 
 module.exports = config
