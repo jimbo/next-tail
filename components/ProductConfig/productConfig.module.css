@@ -1,0 +1,9 @@
+.root {
+	composes: gap-lg from global;
+	composes: grid from global;
+}
+
+.actions {
+	composes: gap-sm from global;
+	composes: grid from global;
+}

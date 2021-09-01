@@ -1,3 +1,4 @@
+import ProductConfig from "../ProductConfig"
 import Raw from "../Raw"
 import classes from "./productDetail.module.css"
 
@@ -47,7 +48,9 @@ const ProductDetail = (props) => {
 					/>
 				</div>
 			</div>
-			<div className={classes.config} />
+			<div className={classes.config}>
+				<ProductConfig />
+			</div>
 			<div className={classes.description}>
 				<div className={classes.descriptionHeader}>
 					<h2 className={classes.descriptionTitle}>
