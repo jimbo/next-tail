@@ -1,7 +1,9 @@
+.root {
+	composes: header from global;
+}
+
 .header {
-	composes: bg-neutral-200 from global;
-	composes: h-9 from global;
-	composes: w-full from global;
+	composes: hidden from global;
 }
 
 .switcher {
@@ -10,7 +12,6 @@
 }
 
 .body {
-	composes: bg-neutral-100 from global;
 	composes: h-20 from global;
 	composes: w-full from global;
 }

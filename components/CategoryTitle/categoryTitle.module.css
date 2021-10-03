@@ -1,0 +1,11 @@
+.root {
+    composes: bg-brand-400 from global;
+    composes: flex from global;
+    composes: font-bold from global;
+    composes: font-serif from global;
+    composes: h-48 from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: text-1100 from global;
+    composes: text-static-white from global;
+}

@@ -1,6 +1,5 @@
 const aspectRatioPlugin = require("@tailwindcss/aspect-ratio")
 const { getColors } = require("./lib/colors")
-const matcher = require("./lib/matcher")
 const veniaPlugin = require("./plugins")
 
 const config = {
@@ -98,6 +97,11 @@ const config = {
 			plugins: {
 				body: {
 					color: theme("colors.neutral.800")
+				},
+				header: {
+					backgroundColor: theme("colors.neutral.50"),
+					color: theme("colors.neutral.800"),
+					height: theme("height.9")
 				}
 			}
 		})

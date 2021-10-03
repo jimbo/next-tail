@@ -8,6 +8,7 @@ const plugins = [
 	require("./button"),
 	require("./card"),
 	require("./foo"),
+	require("./header"),
 	require("./heading"),
 	require("./rail")
 ]
