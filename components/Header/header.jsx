@@ -19,7 +19,7 @@ const Header = (props) => {
 			<div className={classes.body}>
 				<nav className={classes.nav}>
 					<div className={classes.menu} />
-					<img className={classes.logo} src="/venia-logo.svg" />
+					<img className={classes.logo} src="/pfluger-logo.svg" />
 					<MegaMenu />
 					<User />
 				</nav>
