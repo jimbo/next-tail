@@ -4,10 +4,7 @@ const matcher = require("./theme/lib/matcher")
 
 const COLORS = {
 	brand: {
-		400: "38 128 235",
-		500: "20 115 230",
-		600: "13 102 208",
-		700: "9 90 186"
+		400: "38 128 235"
 	},
 	neutral: {
 		50: "255 255 255",
@@ -21,6 +18,10 @@ const COLORS = {
 		700: "110 110 110",
 		800: "75 75 75",
 		900: "44 44 44"
+	},
+	static: {
+		black: "0 0 0",
+		white: "255 255 255"
 	}
 }
 
@@ -38,6 +39,10 @@ const config = {
 	},
 	separator: "_",
 	theme: {
+		fontFamily: {
+			sans: ["Avenir Next", "ui-sans-serif", "sans-serif"],
+			serif: ["Avenir Next", "ui-serif", "serif"]
+		},
 		venia: (theme) => ({
 			plugins: {
 				header: {

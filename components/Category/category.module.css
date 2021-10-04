@@ -1,1 +1,23 @@
-.root {}
+.root {
+	composes: container from global;
+	composes: gap-x-lg from global;
+	composes: grid from global;
+	composes: xl_grid-cols-12 from global;
+	composes: xl_grid-flow-row-dense from global;
+}
+
+.header {
+	composes: xl_col-end-13 from global;
+	composes: xl_col-start-1 from global;
+}
+
+.aside {
+	height: 20rem;
+	composes: xl_col-end-4 from global;
+	composes: xl_col-start-1 from global;
+}
+
+.content {
+	composes: xl_col-end-13 from global;
+	composes: xl_col-start-4 from global;
+}

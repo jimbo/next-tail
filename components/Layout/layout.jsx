@@ -9,7 +9,8 @@ const Layout = (props) => {
 	const { pathname } = useRouter()
 
 	const isHome = pathname === "/"
-	const shouldRenderBreadcrumbs = !isHome
+	const isCategory = pathname === "/category"
+	const shouldRenderBreadcrumbs = !isHome && !isCategory
 	const breadcrumbs = shouldRenderBreadcrumbs ? <Breadcrumbs /> : null
 
 	return (

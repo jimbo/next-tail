@@ -1,1 +1,23 @@
-.root {}
+.root {
+	composes: gap-sm from global;
+	composes: flex from global;
+	composes: font-medium from global;
+	composes: h-28 from global;
+	composes: items-center from global;
+	composes: justify-end from global;
+}
+
+.control {
+	composes: border-2 from global;
+	composes: border-neutral-400 from global;
+	composes: h-11 from global;
+	composes: inline-flex from global;
+	composes: items-center from global;
+	composes: min-w-40 from global;
+	composes: rounded-lg from global;
+	composes: px-3 from global;
+}
+
+.count {
+	margin-right: auto;
+}
