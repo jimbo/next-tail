@@ -1,0 +1,13 @@
+.root {
+	composes: font-medium from global;
+	composes: hidden from global;
+	composes: mt-28 from global;
+	composes: xl_block from global;
+}
+
+.heading {
+	composes: border-b-2 from global;
+	composes: border-neutral-400 from global;
+	composes: pb-4 from global;
+	composes: text-400 from global;
+}

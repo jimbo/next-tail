@@ -19,8 +19,22 @@
 .nav {
 	composes: container from global;
 	composes: grid from global;
+	composes: grid-cols-common from global;
+	composes: grid-flow-col from global;
 	composes: h-20 from global;
-	composes: items-center from global;
 	composes: mx-auto from global;
 	composes: px-lg from global;
+}
+
+.menu {
+	composes: block from global;
+	composes: h-10 from global;
+	composes: self-center from global;
+	composes: w-10 from global;
+	composes: xl_hidden from global;
+}
+
+.logo {
+	composes: h-6 from global;
+	composes: self-center from global;
 }

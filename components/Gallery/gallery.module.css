@@ -1,16 +1,24 @@
 .root {
 	composes: font-medium from global;
-	composes: gap-md from global;
+	composes: gap-x-md from global;
+	composes: gap-y-lg from global;
 	composes: grid from global;
-	composes: xl_grid-cols-12 from global;
-	composes: xl_grid-flow-row-dense from global;
+	composes: grid-cols-12 from global;
+	composes: grid-flow-row-dense from global;
+	composes: justify-stretch from global;
 }
 
 .tile {
+	/* composes: col-span-12 from global; */
+	composes: grid from global;
+	composes: justify-center from global;
 	composes: leading-relaxed from global;
-	composes: xl_col-span-4 from global;
+	composes: col-span-6 from global;
+	composes: text-200 from global;
+	composes: md_col-span-4 from global;
 }
 
 .name {
+	composes: font-semibold from global;
 	composes: pt-2 from global;
 }

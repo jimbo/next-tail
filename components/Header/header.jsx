@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import MegaMenu from "../MegaMenu"
+import User from "../User"
 import classes from "./header.module.css"
 
 const Header = (props) => {
@@ -15,7 +17,12 @@ const Header = (props) => {
 				<div className={classes.switcher} />
 			</div>
 			<div className={classes.body}>
-				<nav className={classes.nav}>{text}</nav>
+				<nav className={classes.nav}>
+					<div className={classes.menu} />
+					<img className={classes.logo} src="/venia-logo.svg" />
+					<MegaMenu />
+					<User />
+				</nav>
 			</div>
 		</header>
 	)

@@ -27,6 +27,7 @@ const TILES = Array.from(DATA, ({ name, price }) => (
 			className={classes.image}
 			height={400}
 			src="https://picsum.photos/seed/picsum/322/400"
+			style={{ width: "100%" }}
 			width={322}
 		/>
 		<div className={classes.name}>{name}</div>
