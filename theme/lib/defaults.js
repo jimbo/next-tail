@@ -1,7 +1,7 @@
 const matcher = require("./matcher")
 
 module.exports = {
-    mode: "jit",
+	mode: "jit",
 	purge: {
 		content: ["./components/**/*.css", "./pages/**/*.css"],
 		extractors: [
@@ -11,5 +11,5 @@ module.exports = {
 			}
 		]
 	},
-	separator: "_",
+	separator: "_"
 }
