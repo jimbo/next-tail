@@ -1,4 +1,6 @@
 .root {
+	composes: border-b-2 from global;
+	composes: border-brand-400 from global;
 	composes: header from global;
 }
 

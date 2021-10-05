@@ -35,8 +35,8 @@ const config = {
 		venia: (theme) => ({
 			plugins: {
 				header: {
-					backgroundColor: theme("colors.neutral.900"),
-					color: theme("colors.neutral.50")
+					// backgroundColor: theme("colors.neutral.900"),
+					// color: theme("colors.neutral.50")
 				}
 			}
 		})
